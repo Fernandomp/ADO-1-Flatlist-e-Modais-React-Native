@@ -10,12 +10,14 @@ const ShowDetalhes = ({display,toogleModal,mensagem,mensagem2,mensagem3}) => (
           visible={display}
           onRequestClose={toogleModal}
     >
+
         <View style={styles.centeredView}>
           <View style={styles.modalView}>
                 <Pressable onPress={toogleModal}>
                   <Text>{mensagem}</Text>
                   <Text>{mensagem2}</Text>
                   <Text>{mensagem3}</Text>
+                  
                 </Pressable>
           </View>
         </View>
